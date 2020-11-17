@@ -1,0 +1,56 @@
+.align {
+    width: 150px;
+    display: block;
+    float: left;
+    color:black;
+}
+#deco{
+    text-align: center ;
+    font-family: 'DK', sans-serif;
+	color: #e71d73;
+    font-weight: bold;
+	font-size: 20px;
+	
+}
+#gauche{
+	float: left;
+}
+
+.envoyer{
+    text-align: center;
+    margin-top: 5px;
+}
+form {
+    background-color: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+legend{
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "DK";
+    src: url("Img/DKDirrrty.TTF") format("truetype");
+
+}
+
+.box{
+    padding: 5%;
+    border-width:1px;
+    border-style:solid;
+    border-color:rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 72px -24px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 72px -24px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 72px -24px rgba(0,0,0,0.75);
+
+}
+
+.taille{
+    width: 50px;
+    height: 50px;
+}
+}

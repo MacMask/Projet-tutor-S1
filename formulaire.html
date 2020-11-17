@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" type="text/css" href="formulaire.css"/>
+    <meta charset="UTF-8">
+    <title>formulaire</title>
+</head>
+<body>
+<img class="taille" src="Img/logo_iut.png">
+<div id="deco"> Formulaire de demande de stage</div>
+<form method="post" action="traitement.php">
+    <div class="box">
+    <fieldset>
+        <legend>Vos coordonnées</legend>
+    <p><label class="align" for="nom">Nom : </label><input type="text" name="NOM" id="nom" placeholder="Ex : Leroux" size="30" maxlength="20"/></p>
+    <p><label class="align" for="prenom">Prénom: </label><input type="text" name="PRENOM" id="prenom" placeholder="Ex : Anthony" size="30" maxlength="20"/></p>
+    <p><label class="align" for="NomE">Entreprise : </label><input type="text" name="ENTREPRISE" id="NomE" placeholder="Ex : Decathlon" size="30" maxlength="30" required/></p>
+    <p><label class="align" for="mail">Email : </label><input type="email" name="MAIL" id="mail" placeholder="MonMail@gmail.com" size="40" maxlength="30" required/></p>
+    <p><label class="align" for="telephone">Téléphone : </label><input type="tel" name="TELEPHONE" id="telephone" placeholder="99/99/99/99/99" size="30" maxlength="15"/></p>
+    </fieldset>
+    <fieldset>
+        <legend>Concernant le stage</legend>
+        <p><label class="align" for="pays">Pays de localisation?</label>
+        <select name="pays" id="pays" required>
+            <option value="france">France</option>
+            <option value="espagne">Espagne</option>
+            <option value="italie">Italie</option>
+            <option value="royaume-uni">Royaume-Uni</option>
+            <option value="canada">Canada</option>
+            <option value="etats-unis">États-Unis</option>
+            <option value="chine">Chine</option>
+            <option value="japon">Japon</option>
+    </select></p>
+        <p><label class="align" for="duree">Durée du stage : </label>
+			<select name="duree" id="pays" required>
+            <option value="Janv">Janvier - avril</option>
+            <option value="Av">Avril - juin</option>
+            <option value="Aut">Autres</option>
+           
+    </select>
+		</p>
+        <p><label class="align" for="type">Type de stage : </label><textarea id="m6RAB20RA8BagC3fR23220pbK800571330015773697763g" class="text-area required" name="m6RAB20RA8BagC3fR23220pbK800571330015773697763g" cols="40" rows="8" style="margin: 0px 0px 10px; width: 650px; height: 335px;"></textarea></p>
+
+    </fieldset>
+	
+	<p><label for="fichier"> Joindre un document : </label>
+       <input type="file" name="fichier" id="fichier"> </p>
+    <p><input type="checkbox" required/> <label for="accepter">En cochant cette case, je reconnais avoir pris connaissance des conditions d'annulation et de responsabilités </label></p>
+
+    <input class="envoyer" type="submit" value="Envoyer" />
+</form>
+</div>
+</body>
+</html>
